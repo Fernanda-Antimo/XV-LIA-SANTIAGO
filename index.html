@@ -1,55 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XV-LIA-& SANTIAGO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XV - Lia & Santiago</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-    .canva-container {
-      width: 100%;
-      height: 100vh; /* 100% de la pantalla */
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-
-    iframe {
-      border: none;
       width: 100%;
       height: 100%;
+      font-family: 'Arial', sans-serif;
+      background-color: #fdf5e6;
+      overflow-x: hidden;
     }
 
-    a {
-      display: block;
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
       text-align: center;
-      margin: 1em 0;
-      font-family: sans-serif;
-      color: #b30000;
-      font-weight: bold;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1, h2, h3, p {
+      margin-bottom: 15px;
+      color: #800000;
+    }
+
+    .boton {
+      background-color: #800000;
+      color: white;
+      padding: 10px 20px;
       text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="canva-container">
-    <iframe 
-      loading="lazy"
-      allowfullscreen
-      src="https://www.canva.com/design/DAGptuTMBX8/ZBIsf4NMFUmOsnd-N9_OSg/view?embed">
-    </iframe>
-  </div>
+  <div class="container">
+    <div class="section">
+      <h1>XV Años</h1>
+      <h2>Lia & Santiago</h2>
+      <img src="https://via.placeholder.com/300x300?text=XV+Lia+%26+Santiago" alt="Imagen de XV" />
+      <p>Después de tantos sueños e ilusiones, por fin ha llegado el día que tanto hemos esperado.</p>
+    </div>
 
-  <a href="https://www.canva.com/design/DAGptuTMBX8/ZBIsf4NMFUmOsnd-N9_OSg/view?utm_content=DAGptuTMBX8&utm_campaign=designshare&utm_medium=embeds&utm_source=link" 
-     target="_blank" rel="noopener">
-    Nuestros XV de Fernanda Camila Antimo Perez
-  </a>
+    <div class="section">
+      <h3>Fecha</h3>
+      <p>Sábado 27, 2025</p>
+    </div>
+
+    <div class="section">
+      <h3>Código de Vestimenta</h3>
+      <p>De gala. Por favor, evita vestir de rojo. Ese honor es solo para la quinceañera.</p>
+    </div>
+
+    <div class="section">
+      <h3>Misa Religiosa</h3>
+      <p>05:30 PM</p>
+      <a class="boton" href="https://maps.google.com" target="_blank">Ver ubicación</a>
+    </div>
+
+    <div class="section">
+      <h3>Recepción</h3>
+      <p>Salón 2 - 07:30 PM</p>
+      <a class="boton" href="https://maps.google.com" target="_blank">Ver ubicación</a>
+    </div>
+
+    <div class="section">
+      <h3>Opción de regalo</h3>
+      <p>Sobres (efectivo)</p>
+    </div>
+
+    <div class="section">
+      <h3>Itinerario</h3>
+      <p>Recepción - Cena - Baile - Pastel</p>
+    </div>
+
+    <div class="section">
+      <h3>Confirma tu asistencia</h3>
+      <a class="boton" href="https://wa.me/1234567890" target="_blank">Confirmar vía WhatsApp</a>
+    </div>
+  </div>
 </body>
 </html>
-    
